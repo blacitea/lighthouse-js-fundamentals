@@ -1,6 +1,6 @@
 const raining = 1;
 const cold = "";
-const temperature = 12;
+const temperature = -1;
 
 /* Let try to do better 
 if(raining){
