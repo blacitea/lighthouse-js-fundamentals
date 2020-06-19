@@ -32,12 +32,12 @@ const whereCanIPark = (spots, vehicle) => {
 
 
 let carPark1 = [
-  ['r', 'm', 's', 'M', 's', 's'],
+  ['r', 'm', 's', 'm', 's', 's'],
   ['s', 'r', 's', 's', 'r', 'm'],
-  ['s', 'm', 's', 's', 'r', 'm'],
-  ['S', 'r', 's', 'm', 'R', 'm'],
-  ['S', 'R', 's', 'm', 'r', 's'],
-  ['s', 'r', 'S', 'M', 'M', 's']
+  ['s', 'M', 's', 's', 'r', 'm'],
+  ['s', 'r', 's', 'm', 'm', 'm'],
+  ['s', 'm', 'S', 'm', 'r', 's'],v
+  ['s', 'r', 's', 'R', 'M', 'S']
 ];
 
 console.log(whereCanIPark(carPark1, 'small'));
