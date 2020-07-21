@@ -5,16 +5,19 @@ const loopyLighthouse = function(range, multiples, words) {
 
   // set the function to loop between range
   for (let l = range[0]; l <= range[1]; l++) {
+    // a new variable to store the return string
+    let result = "";
     // if statement to determine if replacement occure
-    if (l % multiples[0] === 0 & l % multiples[1] === 0) {
-      console.log(words[0] + words[1]);
-    } else if (l % multiples[0] === 0) {
-      console.log(words[0]);
-    } else if (l % multiples[1] === 0) {
-      console.log(words[1]);
-    } else {
-      console.log(l);
+    if (l % multiples[0] === 0) {
+      result += words[0];
     }
+    if (l % multiples[1] === 0) {
+      result += words[1];
+    }
+    if (!result) {
+      result += l;
+    }
+    console.log(result);
   }
 };
 
